@@ -17,11 +17,11 @@ namespace GoldenCloudExamples.Declare
             //申报相关接口
             var declareExp = new DeclareExamples();
             declareExp.DeclareInit();//申报初始化
-            declareExp.DeclareCancel();//申报作废
-            declareExp.DeclarePay();//申报缴款
-            declareExp.DeclareQuery();//申报查询
-            declareExp.DeclareRegister();//申报登记
-            declareExp.DeclareSubmit();//申报提交
+            //declareExp.DeclareCancel();//申报作废
+            //declareExp.DeclarePay();//申报缴款
+            //declareExp.DeclareQuery();//申报查询
+            //declareExp.DeclareRegister();//申报登记
+            //declareExp.DeclareSubmit();//申报提交
         }
     }
 }

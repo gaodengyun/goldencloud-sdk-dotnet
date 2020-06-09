@@ -27,35 +27,6 @@ using Newtonsoft.Json.Linq;
 
 namespace GoldenCloud.Common
 {
-    /// <summary>
-    /// 云票票SDK
-    /// </summary>
-    /// <![CDATA[
-    /// var postData = new ReqInvoiceBlue()
-    /// {
-    /// };
-    /// var conf = new Configs()
-    /// {
-    /// };
-    ///
-    /// var sdk = new GoldenSDK(conf);
-    /// var resp = sdk.HttpRequest<ReqInvoiceBlue, RespInvoiceBlue>(ApiAddress.INVOICE_BLUE, postData);
-    /// if (resp.code == (int)EReqErrCode.S0)
-    /// {
-    ///     //success
-    ///
-    ///     var result = resp.data;
-    ///     Debug.WriteLine(result.invoice_id);
-    ///     Debug.WriteLine(result.order_sn);
-    ///     Debug.WriteLine(result.state);
-    /// }
-    /// else
-    /// {
-    ///     //error
-    ///
-    ///     Debug.WriteLine(resp.message);
-    /// }
-    /// ]]>
     public class GoldenSDK
     {
         private readonly Configs _conf;

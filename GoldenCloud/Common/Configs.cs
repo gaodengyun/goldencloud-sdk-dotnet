@@ -102,8 +102,8 @@ namespace GoldenCloud.Common
             PublicKey="";
 
 #else
-            Appkey = "2ecde22f58f23f0b4e1d";
-            Appsecret = "a1c8484c9af809bc42d322a715d097d5";
+            Appkey = "";
+            Appsecret = "";
             DevShorthand = "";
             Website = "";
             Algorithm = "HMAC-SHA256";
