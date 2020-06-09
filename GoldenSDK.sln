@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D208AF15-0AC6-4FE2-A55A-C76274AA463A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenCloud", "GoldenCloud\GoldenCloud.csproj", "{54ED567A-184B-405D-8127-C0704ED09326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenCloudExamples", "GoldenCloudExamples\GoldenCloudExamples.csproj", "{3BBB53FF-8DE9-4F40-AA89-5D57FFA0794F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54ED567A-184B-405D-8127-C0704ED09326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54ED567A-184B-405D-8127-C0704ED09326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54ED567A-184B-405D-8127-C0704ED09326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54ED567A-184B-405D-8127-C0704ED09326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BBB53FF-8DE9-4F40-AA89-5D57FFA0794F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BBB53FF-8DE9-4F40-AA89-5D57FFA0794F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BBB53FF-8DE9-4F40-AA89-5D57FFA0794F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BBB53FF-8DE9-4F40-AA89-5D57FFA0794F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {494EECDB-71E0-40F9-9FA4-3D43C0F5A949}
+	EndGlobalSection
+EndGlobal
