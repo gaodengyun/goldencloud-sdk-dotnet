@@ -90,7 +90,7 @@ namespace GoldenCloud.Common
         public Configs()
         {
             _baseUrl = new Dictionary<EApiEnv, string>() { { EApiEnv.Test, "https://apigw-test.goldentec.com" }, { EApiEnv.Prod, "https://openapi.wetax.com.cn" }, };
-                                                                    
+
             Ver = "1.0.0";
 #if RELEASE
             Appkey = "";

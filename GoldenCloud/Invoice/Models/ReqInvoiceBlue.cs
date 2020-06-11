@@ -248,40 +248,40 @@ namespace GoldenCloud.Invoice.Models
         public string zsfs { get; set; }
 
         /// <summary>
-        /// 差额征税扣除额
-        /// <![CDATA[【单位：分（如6666指66.66元）】：当 zsfs 为 2 时，此项必填]]>
+        /// 差额征税扣除额【单位：元（精确到小数点后2位）】
+        /// <![CDATA[当 zsfs 为 2 时，此项必填]]>
         /// <para>必选-否</para>
         /// <para>长度-20</para>
-        /// <para>示例-6666</para>
+        /// <para>示例-66.66</para>
         /// </summary>
-        public int deduction { get; set; }
+        public string deduction { get; set; }
 
         /// <summary>
-        /// 含税总金额【单位：分（如6666指66.66元）】
+        /// 含税总金额【单位：元（精确到小数点后2位）】
         /// <![CDATA[]]>
         /// <para>必选-是</para>
         /// <para>长度-20</para>
-        /// <para>示例-6666</para>
+        /// <para>示例-66.66</para>
         /// </summary>
-        public int amount_has_tax { get; set; }
+        public string amount_has_tax { get; set; }
 
         /// <summary>
-        /// 总税额【单位：分（如6666指66.66元）】
+        /// 总税额【单位：元（精确到小数点后2位）】
         /// <![CDATA[]]>
         /// <para>必选-是</para>
         /// <para>长度-20</para>
-        /// <para>示例-6666</para>
+        /// <para>示例-66.66</para>
         /// </summary>
-        public int tax_amount { get; set; }
+        public string tax_amount { get; set; }
 
         /// <summary>
-        /// 不含税总金额【单位：分（如6666指66.66元）】
+        /// 不含税总金额【单位：元（精确到小数点后2位）】
         /// <![CDATA[]]>
         /// <para>必选-是</para>
         /// <para>长度-20</para>
-        /// <para>示例-6666</para>
+        /// <para>示例-66.66</para>
         /// </summary>
-        public int amount_without_tax { get; set; }
+        public string amount_without_tax { get; set; }
 
         /// <summary>
         /// 备注（票面信息）
@@ -401,13 +401,13 @@ namespace GoldenCloud.Invoice.Models
         public string unit { get; set; }
 
         /// <summary>
-        /// 不含税商品总价
-        /// <para>= 商品含税价总金额 / (1+税率)【单位：分（如6666指66.66元）】</para>
+        /// 不含税商品总价= 商品含税价总金额 / (1+税率)【单位：元（精确到小数点后2位）】
+        /// <![CDATA[]]>
         /// <para>必选-是</para>
         /// <para>长度-20</para>
-        /// <para>示例-6666</para>
+        /// <para>示例-66.66</para>
         /// </summary>
-        public int total_price { get; set; }
+        public string total_price { get; set; }
 
         /// <summary>
         /// 商品数量
@@ -429,30 +429,30 @@ namespace GoldenCloud.Invoice.Models
 
         /// <summary>
         /// 商品税率
-        /// <para>请参照【税收商品编码税率表】或咨询财务【千分位，即税率1000（如30代表3%的税率）】(千分位,税率1000)</para>
+        /// <para>请参照【税收商品编码税率表】或咨询财务【最多保留小数点后3位】</para>
         /// <para>必选-是</para>
         /// <para>长度-6</para>
-        /// <para>示例-30</para>
+        /// <para>示例-0.03</para>
         /// </summary>
-        public int tax_rate { get; set; }
+        public string tax_rate { get; set; }
 
         /// <summary>
         /// 商品税额
-        /// <para>税额 = 不含税商品总价 * 税率【单价：分（如6666指66.66元）】</para>
+        /// <para>税额 = 不含税商品总价 * 税率【单位：元（精确到小数点后2位）】</para>
         /// <para>必选-是</para>
         /// <para>长度-20</para>
-        /// <para>示例-6666</para>
+        /// <para>示例-66.66</para>
         /// </summary>
-        public int tax_amount { get; set; }
+        public string tax_amount { get; set; }
 
         /// <summary>
         /// 含税折扣总金额
-        /// <para>金额必须是负数【单位：分（如-6666指-66.66元）(单位：分)</para>
+        /// <para>金额必须是负数【单位：元（精确到小数点后2位）】</para>
         /// <para>必选-否</para>
         /// <para>长度-20</para>
-        /// <para>示例--6666</para>
+        /// <para>示例-"-66.66"</para>
         /// </summary>
-        public int discount { get; set; }
+        public string discount { get; set; }
 
         /// <summary>
         /// 优惠政策标志 0：不使用优惠政策，1：使用优惠政策
