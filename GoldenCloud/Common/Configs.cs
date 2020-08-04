@@ -89,7 +89,7 @@ namespace GoldenCloud.Common
 
         public Configs()
         {
-            _baseUrl = new Dictionary<EApiEnv, string>() { { EApiEnv.Test, "https://apigw-test.goldentec.com" }, { EApiEnv.Prod, "https://openapi.wetax.com.cn" }, };
+            _baseUrl = new Dictionary<EApiEnv, string>() { { EApiEnv.Test, "https://apigw-test.goldentec.com" }, { EApiEnv.Prod, "https://apigw.goldentec.com" }, };
 
             Ver = "1.0.0";
 #if RELEASE
